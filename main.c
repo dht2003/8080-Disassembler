@@ -16,8 +16,8 @@ int main(int argc , char ** argv){
     fread(program.buffer , fsize , 1 , f);
     fclose(f);
     while(program.PC < fsize) 
-        dissassembler8080p(program);
-    freeCode(program);
+        dissassembler8080p(&program);
+    freeCode(&program);
     return 0;
     
 
